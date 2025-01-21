@@ -2,6 +2,8 @@
 const repeatString = function() {
     for(i=0; i< 3; i++){
         return heyString;
+
+    //returned false test failed
     }
 };
 
