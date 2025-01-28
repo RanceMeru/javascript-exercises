@@ -1,6 +1,8 @@
-const removeFromArray = function(myArray) {
-    return myArray.removeFromArray([1,2,3,4])
-};
+const removeFromArray = function(myArray,...args) {
+    
+    const newArray = [];
 
+    removeFromArray([newArray]);
+}
 // Do not edit below this line
 module.exports = removeFromArray;
