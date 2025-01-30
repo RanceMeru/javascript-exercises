@@ -2,10 +2,16 @@ const removeFromArray = function(myArray,...args) {
     
     const newArray = [];
 
-    for(myArray in newArray)
-        if(!newArray===...args){
+    myArray.forEach(number => {
 
-        }
+        //will be using a for loop to avoid errors occuring in the code
+    for(!args.includes(number)) {
+
+        newArray.push(number);
+    }
+        
+    });
+
 
     
 }
