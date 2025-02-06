@@ -1,25 +1,31 @@
 const sumAll = function(num1, num2) {
     
+if(!Number.isInteger(num1)|| !Number.isInteger(num2)){
+    return "ERROR";
+}
+if(num1 < 0 || num2 < 0){
+    return "ERROR";
 
-if(num1 <=0 ||um2 <=0){
-    return "Both numbers must be positive";
+}
+if(num1 > num2){
+    const temp = num1;
+    num1 = num2;
+    num2 = temp;
+    
 }
 
-//make sure we know which is bigger and smaller
 
-const start = Math.min(num1, num2);
-const end = Math.max(num1, num2);
 
 let finalSum = 0;
-for(let i = start; i <= end; i++){
-    sum+=i;
+for(let i = num1; i <= num2; i++){
+    finalSum+=i;
 
 }
 
 //make sure that the numbers are positive and not odd
-return finalSum();
+return finalSum;
 
-};
+}
 
 // Do not edit below this line
 module.exports = sumAll;
